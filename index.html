@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe-App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="images/da-pic.webp" alt="Main pic"></a>
+            <ul>
+                <li><a href="#hero">Main Menu</a></li>
+                <li><a href="#filters">Filters</a></li>
+                <li><a href="#recipes">Recipes</a></li>
+                <li><a href="#categories">Categories</a></li>
+            </ul>
+            <a href="#hero">Find a Recipe</a>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="hero_text">
+                <span>🍜 Find your recipe</span>
+                <h1>Recipes built around your goals.</h1>
+                <form role="search">
+                    <input type="search" placeholder="Recipe name">
+                    <button type="submit">Submit</button>
+                </form>
+                <a href="#recipes">Recipes</a>
+            </div>
+            <div class="hero_image">
+                <img src="images\anh-nguyen-kcA-c3f_3FE-unsplash.jpg" alt="recipe-bowl">
+            </div>
+        </section>
+        <section id="filters">
+            <div class="filter-pills">
+                <button data-filter="all" class="active">All</button>
+                <button data-filter="high-protein">High-Protein</button>
+                <button data-filter="weight-loss">Weight-Loss</button>
+                <button data-filter="bulking">Bulking</button>
+                <button data-filter="healthy-snack">Healthy Snacks</button>
+                <button data-filter="recovery">Recovery</button>
+                <button data-filter="low-calorie">Low Calorie</button>
+                <button data-filter="vegetarian">Vegetarian</button>
+                <button data-filter="quick">Quick Meals</button>
+                <button data-filter="budget">Budget</button>
+            </div>
+        </section>
+        <section id="recipes">
+            <h2>Trending Recipes</h2>
+            <div class="recipe-grid">
+            </div>
+        </section>
+        <section id="categories">
+            <h2>Browse by Category</h2>
+            <div class="category-grid">
+                <a href="#" class="category-card">
+                    <span>🌅</span>
+                    <span>Breakfast</span>
+                </a>
+                <a href="#" class="category-card">
+                    <span>🥗</span>
+                    <span>Lunch</span>
+                </a>
+                <a href="#" class="category-card">
+                    <span>🍛</span>
+                    <span>Dinner</span>
+                </a>
+                <a href="#" class="category-card">
+                    <span>🍎</span>
+                    <span>Snacks</span>
+                </a>
+                <a href="#" class="category-card">
+                    <span>🥤</span>
+                    <span>Smoothies</span>
+                </a>
+                <a href="#" class="category-card">
+                    <span>🍮</span>
+                    <span>Desserts</span>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>🍜NourishKit</p>
+        <p>@2026 NourishKit. All rights reserved.</p>
+    </footer>
+    <script src="js/recipes.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
